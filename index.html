@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Follie della Moda</title>
+    <style>
+        @font-face {
+            font-family: "Micker";
+            src: url("fonts/Micker.ttf") format("truetype");
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-family: "Micker", Arial, sans-serif;
+        }
+        .nav {
+            margin-top: 10px;
+        }
+        .nav span {
+            margin: 0 5px;
+            font-size: 12px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .item h3 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Le Follie della Moda</h1>
+        <div class="nav">
+            <span id="home-link">Home</span> | <span id="catalog-link">Catalogo</span> | <span id="shipping-link">Spedizione</span> | <span id="cart-link">Carrello</span>
+        </div>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="item">
+                <h3>Benvenuti nel sito</h3>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("home-link").addEventListener("click", function() {
+            window.location.href = "/";
+        });
+        
+        document.getElementById("catalog-link").addEventListener("click", function() {
+          window.open('catalog.html', '_blank');
+          window.focus();
+      });
+      
+      document.getElementById("shipping-link").addEventListener("click", function() {
+          window.open('shipping.html', '_blank');
+          window.focus();
+      });
+      
+       document.getElementById("cart-link").addEventListener("click", function() {
+        window.open('cart.html', '_blank');
+        window.focus();
+    });
+    </script>
+</body>
+</html>
