@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BigYugi Website</title>
+    <title>AresY3p</title>
     <style>
         @font-face {
             font-family: "Micker";
@@ -50,9 +50,9 @@
 </head>
 <body>
     <header>
-        <h1>BigYugi Website</h1>
+        <h1>AresY3p</h1>
         <div class="nav">
-            <span id="home-link">Home</span> | <span id="catalog-link">Catalogo</span> | <span id="shipping-link">Spedizione</span> | <span id="cart-link">Carrello</span>
+            <span id="home-link">Home</span> | <span id="source-link">Public Source</span> | <span id="telegram-link">Telegram</span>
         </div>
     </header>
     <main>
@@ -68,20 +68,15 @@
             window.location.href = "/";
         });
         
-        document.getElementById("catalog-link").addEventListener("click", function() {
-          window.open('catalog.html', '_blank');
+        document.getElementById("source-link").addEventListener("click", function() {
+          window.open('source.htmll', '_blank');
           window.focus();
       });
       
-      document.getElementById("shipping-link").addEventListener("click", function() {
-          window.open('shipping.html', '_blank');
+      document.getElementById("telegram-link").addEventListener("click", function() {
+          window.open('telegram.html', '_blank');
           window.focus();
       });
-      
-       document.getElementById("cart-link").addEventListener("click", function() {
-        window.open('cart.html', '_blank');
-        window.focus();
-    });
     </script>
 </body>
 </html>
