@@ -63,6 +63,12 @@
               <div></div>
           </div>
       </div>
+      <div style="text-align:center; margin-top:50px;">
+          <div class="button" onclick="openWebsite2()">
+              Generatore Password
+              <div></div>
+          </div>
+      </div>
 
       <style type="text/css">
           .button {
@@ -90,18 +96,21 @@
               var websiteURL = "https://github.com/AresY3p/ReciptBotTelegram";
               window.open(websiteURL,"_blank");
           }
+
+          function openWebsite2() {
+              var websiteURL = "https://github.com/AresY3p/passwordgentg";
+              window.open(websiteURL,"_blank");
+          }
+
+          document.getElementById("home-link").addEventListener("click", function() {
+              window.location.href = "/";
+          });
+          
+          document.getElementById("source-link").addEventListener("click", function() {
+              window.location.href = "source.html";
+              window.focus();
+          });
       </script>
     </main>
-
-    <script>
-        document.getElementById("home-link").addEventListener("click", function() {
-            window.location.href = "/";
-        });
-        
-        document.getElementById("source-link").addEventListener("click", function() {
-          window.location.href = "source.html";
-          window.focus();
-      });
-    </script>
 </body>
 </html>
